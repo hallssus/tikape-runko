@@ -39,3 +39,7 @@ public class Main {
 }
 
 //testaus
+
+//testaus p2 delete later yyhybuyuyfcfddfg yritän tallentaa netbeansissa tehtyjä muutoksia
+
+//ei ainakaan minulle näe että olisi tallentanut.. jee
