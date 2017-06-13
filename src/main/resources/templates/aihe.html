@@ -2,40 +2,34 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 
     <head>
-        <title>Tervetuloa keskustelemaan</title>
+        <title>Tikapekeskustelu</title>
         <meta charset="utf-8" /> 
-        <style>
-            th{
-                text-align: left
-            }
-        </style>
     </head>
 
     <body>
-
-        <h1 align="center">Aloita keskustelu!</h1>
+        <h1 th:="${alue.nimi}">Lisää uusi aihe tai jatka jo valmiisiin</h1>
         
-        <table align="center" style="width:50%">
+       <table align="center" style="width:50%">
             <tr>
-                <th>Alue</th>
+                <th>Aihe</th>
                 <th>luomispäivä</th>
             </tr>
-            <th:block th:each="alkio : ${alueet}">
+            <th:block th:each="alkio : ${aiheet}">
                 <tr>
                     <td>
-                        <a th:href="@{~/{a_id}(a_id=${alkio.nimi})}" th:text="${alkio.nimi}">nimi</a>
+                        <a th:href="@{~/{a_id}(a_id=${alkio.id})}" th:text="${alkio.nimi}">nimi</a>
                     </td>
                     <td th:text="${alkio.luomispaiva}">luomispäivä</td>
                 </tr>
             </th:block>
         </table>
         
-        <form align="center" method="POST" action="/">
+        <form align="center" method="POST" action="/${aihe.nimi}">
             <br/>
             <input type="text" name="nimi"/><br/>
-            <input type="submit" value="Lisää alue"/>
+            <input type="submit" value="Lisää aihe"/>
             
         </form>
-        
+        <a th:href="@{~/}" th:text="Takaisin">a</a>
     </body>
 </html>
