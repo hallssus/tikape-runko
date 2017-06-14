@@ -2,6 +2,7 @@
 package tikape.runko.pojo;
 
 import java.sql.Date;
+import java.util.List;
 
 public class Aihe {
     private Integer id;

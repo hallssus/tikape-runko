@@ -1,4 +1,4 @@
-package tikape.pojo;
+package tikape.runko.pojo;
 
 public class Viesti {
     private Integer id;

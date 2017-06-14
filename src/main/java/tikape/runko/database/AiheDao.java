@@ -1,10 +1,10 @@
 
-package tikape.database;
+package tikape.runko.database;
 
 import java.sql.SQLException;
 import java.util.List;
-import tikape.collectors.AiheCollector;
-import tikape.pojo.Aihe;
+import tikape.runko.collectors.AiheCollector;
+import tikape.runko.pojo.Aihe;
 
 
 

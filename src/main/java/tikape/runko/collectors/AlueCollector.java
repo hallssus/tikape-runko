@@ -1,10 +1,10 @@
 
-package tikape.collectors;
+package tikape.runko.collectors;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import tikape.database.Collector;
-import tikape.pojo.Alue;
+import tikape.runko.database.Collector;
+import tikape.runko.pojo.Alue;
 
 public class AlueCollector implements Collector<Alue>{
 

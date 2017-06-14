@@ -1,12 +1,12 @@
 
-package tikape.database;
+package tikape.runko.database;
 
-import tikape.database.Dao;
-import tikape.database.Database;
+import tikape.runko.database.Dao;
+import tikape.runko.database.Database;
 import java.sql.SQLException;
 import java.util.List;
-import tikape.collectors.ViestiCollector;
-import tikape.pojo.Viesti;
+import tikape.runko.collectors.ViestiCollector;
+import tikape.runko.pojo.Viesti;
 
 public class ViestiDao implements Dao<Viesti, Integer>{
     

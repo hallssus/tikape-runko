@@ -1,10 +1,10 @@
 
-package tikape.database;
+package tikape.runko.database;
 
 import java.sql.SQLException;
 import java.util.List;
-import tikape.collectors.AlueCollector;
-import tikape.pojo.Alue;
+import tikape.runko.collectors.AlueCollector;
+import tikape.runko.pojo.Alue;
 
 public class AlueDao implements Dao<Alue, Integer>{
     

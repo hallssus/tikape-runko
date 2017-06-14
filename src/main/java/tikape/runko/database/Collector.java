@@ -1,5 +1,5 @@
 
-package tikape.database;
+package tikape.runko.database;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
